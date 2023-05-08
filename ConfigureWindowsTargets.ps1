@@ -11,4 +11,4 @@
   # Turn on PowerShell Remoting
   Enable-PSRemoting -Force
   # Restart WinRM
-  Restart-Service winrm
+  Restart-Service WinRM
