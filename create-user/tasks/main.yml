@@ -4,7 +4,7 @@
     password: Password123
     state: present
     groups:
-        -Users Administrators
+      -Users Administrators
   become: yes  
   ignore_errors: yes
   register: result
