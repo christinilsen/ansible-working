@@ -15,6 +15,6 @@
       db_username: sqluser
       db_password: Pa$$w0rd
   roles:
-    - create-user
+    - create-user 
+    - install-iis
     - create-web-config
-    - copy-web-files
