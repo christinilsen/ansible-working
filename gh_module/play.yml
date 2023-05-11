@@ -4,8 +4,8 @@
     - ansible_python_interpreter: "/usr/bin/python3"
   tasks:
     - name: Create a GitHub Repo
-      github_repo:
-        github_auth_key: "{% raw %} {{github_token}} {% endraw %}"
+      gh_repo:
+        github_auth_key: {% raw %} "{{github_token}}" {% endraw %}
         username: "christinilsen"
         name: "Hello-World"
         description: "First repo created with custom Ansible module"
