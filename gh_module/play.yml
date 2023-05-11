@@ -4,14 +4,14 @@
     - ansible_python_interpreter: "/usr/bin/python3"
   tasks:
   - name: Create a GitHub Repo
-      gh_repo:
-        github_auth_key:  "{{github_token}}" 
-        username: "christinilsen"
-        name: "Hello-World"
-        description: "First repo created with custom Ansible module"
-        private: yes
-        has_issues: no
-        has_wiki: no
-        has_downloads: no
-        state: present
-      register: result
+    gh_repo:
+      github_auth_key:  "{{github_token}}" 
+      username: "christinilsen"
+      name: "Hello-World"
+      description: "First repo created with custom Ansible module"
+      private: yes
+      has_issues: no
+      has_wiki: no
+      has_downloads: no
+      state: present
+    register: result
