@@ -5,7 +5,7 @@
   tasks:
     - name: Create a GitHub Repo
       gh_repo:
-        github_auth_key: {% raw %} "{{github_token}}" {% endraw %}
+        github_auth_key: "{% raw %} {{github_token}} {% endraw %}""
         username: "christinilsen"
         name: "Hello-World"
         description: "First repo created with custom Ansible module"
