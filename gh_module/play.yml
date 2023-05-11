@@ -1,6 +1,6 @@
 - hosts: localhost
   vars:
-    - github_token: "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"
+    - github_token: "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"
     - ansible_python_interpreter: "/usr/bin/python3"
   tasks:
     - name: Create a GitHub Repo
