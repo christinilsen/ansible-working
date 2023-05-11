@@ -3,7 +3,7 @@
     - github_token: "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"
     - ansible_python_interpreter: "/usr/bin/python3"
   tasks:
-- name: Create a GitHub Repo
+  - name: Create a GitHub Repo
       gh_repo:
         github_auth_key:  "{{github_token}}" 
         username: "christinilsen"
